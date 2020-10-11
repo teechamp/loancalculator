@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Loan App">
+    <meta name="description" content="This Loan App help gives loan to customers">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+  
+
+    
+    <section>
+      <div class="begin">
+        <h1>Loan Calculator</h1>
+      </div>
+     
+      <div class="container cont1">
+        <div class="row">
+          <div class="col-md-6 mx-auto calculate-form">
+            <div class="card card-body text-center mt-5">
+              <h1 class="heading display-5 pb-3" >
+             
+                
+                    
+                      <div class="head">
+                        <h6>Enter Loan Information:</h6>
+
+                      </div>
+                
+
+                    <form id="loan-form row-first">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">#Amt of the loan(any currency):</span>
+                          </div>
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="amount"
+                            placeholder="Loan Amount"
+                          />
+                        </div>
+                      </div>
+                  
+
+                      <div class="form-group">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">%Annual percentage rate of interest</span>
+                          </div>
+                          <input
+                            type="number"
+                            class="form-control"
+                            id="percentage"
+                            placeholder="Interest"
+                          />
+                        </div>
+                      </div>
+                    
+                  
+                <div class="form-group">
+                  <input
+                    type="number"
+                    id="period"
+                    class="form-control"
+                    placeholder="Interest:repayments period in month"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="submit"
+                    value="Calculate"
+                    class="btn btn-danger  sec-btn"
+                  />
+                </div>
+              </form>
+             
+              <div id="result">
+                
+                
+                    
+                      <div class="tail">
+                        <h5>Payment Information:</h5>
+                        </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Monthly Payment</span>
+                    </div>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="monthly-pay"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Total Payment</span>
+                    </div>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="total-pay"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Total Interest payment</span>
+                    </div>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="total-interest"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script  src="js/app.js"></script>
+</body>
+</html>
+  
+
+
+
+     
